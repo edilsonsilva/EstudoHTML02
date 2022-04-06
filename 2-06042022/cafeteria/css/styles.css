@@ -1,0 +1,63 @@
+/* 
+Arquivo de CSS(Cascade Style Sheet - Folha de Estilo em Cascata)
+é utilizado para fazer a camada de formatação de um
+site em html.
+*/
+/* 
+Vamos formatar todos os elementos presente em uma página 
+html usando o *(asterisco) e aplicar margem externa e interna
+zero(0) e realizar o ajuste das caixas em html
+*/
+
+* {
+  margin: 0px; /*Margem externa das caixas*/
+  padding: 0px; /*Margem interna das caixas*/
+  /*Ajuste de padding das caixa sem a soma com a 
+  largura*/
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px; /*aplicar altura ao cabeçalho*/
+  /*aplicar imagem de fundo ao cabecalho*/
+  background-image: url("../img/cafeteria2.jpg");
+  /*ajustar o tamanho da imagem de fundo*/
+  background-size: 100% cover;
+  /*alterar a posição vertical da imagem*/
+  background-position-y: -400px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 30pt;
+  color: white;
+  /*
+  vamos aplicar uma sombra:
+  -Primeiro elemento é a posição horizontal da sombra;
+  -Segundo elemento é a posição vertical da sombra;
+  -Terceiro elemento é o efeito de esfumaçado da sombra;
+  -Quarto elemento é a cor
+  */
+  text-shadow: 2px 2px 5px black;
+}
+
+/*Vamos fazer a formatação da barra de navegação*/
+nav {
+  background-color: rgb(50, 63, 59);
+  padding: 10px;
+  text-align: center;
+}
+nav ul li {
+  /*dispor os elementos em linha*/
+  display: inline-block;
+  /*espaço entre os links*/
+  margin: 5px;
+}
+nav ul li a {
+  color: white;
+  font-family: arial;
+  /*tirar o sublinhado*/
+  text-decoration: none;
+}
