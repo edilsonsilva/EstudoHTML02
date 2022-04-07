@@ -22,7 +22,7 @@ header {
   /*aplicar imagem de fundo ao cabecalho*/
   background-image: url("../img/cafeteria2.jpg");
   /*ajustar o tamanho da imagem de fundo*/
-  background-size: 100% cover;
+  background-size: 100%;
   /*alterar a posição vertical da imagem*/
   background-position-y: -400px;
   padding-top: 200px;
@@ -60,4 +60,47 @@ nav ul li a {
   font-family: arial;
   /*tirar o sublinhado*/
   text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+footer {
+  background-color: rgb(50, 63, 59);
+  /* Permitir com que o rodapé fique com seu 
+  conteúdo flexível */
+  display: flex;
+  /* Dispor o conteúdo em linha */
+  flex-direction: row;
+  /* ajustar o conteúdo ao centro com Justify-Content e Align-Itens */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#endereco {
+  font-family: arial;
+  font-size: 12pt;
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+#redes {
+  position: absolute;
+  right: 50px;
+}
+#redes ul {
+  /* Retirar as bolinhas de marcação */
+  list-style: none;
+}
+
+/* Vamos dispor a imagens das redes 
+em linha com display inline-block */
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
 }
