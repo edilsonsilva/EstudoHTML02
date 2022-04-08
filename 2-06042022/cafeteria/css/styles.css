@@ -184,3 +184,67 @@ estão dentro da caixa imghistoria */
   margin-bottom: 20px;
 }
 /*======================= Fim da página história ==============================*/
+
+/*====================== Início dos estilos para o cardápio =======*/
+h3 {
+  /* converter as letras para maiúsculas */
+  text-transform: uppercase; /*UpperCase->Letras maiúsculas*/
+  font-size: 20pt;
+  font-family: verdana;
+  color: rgb(216, 81, 32);
+  margin: 30px;
+}
+#linha {
+  display: flex;
+  flex-direction: row;
+  /* realizar a quebra linha para os demais 
+  produtos que forem adicionados */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#linha #produto {
+  width: 40%;
+  margin: 10px;
+  /* determinar que o contéudo do produto será 
+  flexível */
+  display: flex;
+  flex-direction: row;
+}
+
+#linha #produto #imgprod,
+#linha #produto #descricao {
+  width: 48%;
+  margin: 10px;
+  transition: ease 0.5s;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+h4 {
+  font-family: verdana;
+  font-size: 20pt;
+  margin: 10px;
+}
+h5 {
+  font-family: "Lucida Sans";
+  font-weight: lighter; /*Reitirar o negrito*/
+  font-size: 10pt;
+  margin: 10px;
+}
+h6 {
+  font-family: "Lucida Sans";
+  color: darkred;
+  font-size: 12pt;
+  margin: 10px;
+}
+#linha #produto:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+/*====================Fim da página do cardápio =========================*/
