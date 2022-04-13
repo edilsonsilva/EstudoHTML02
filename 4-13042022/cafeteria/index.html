@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cafeteria,Café,Bolinho">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cafeteria Print</title>
+</head>
+<body>
+    <header>
+        <a id="abrir" href="#" onclick="abrir()">&#9776;</a>
+        <h1>Cafeteria Print</h1>
+    </header>
+    <nav>
+        <a id="fechar" href="#" onclick="fechar()">&times;</a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="historia.html">história</a></li>
+            <li><a href="cardapio.html">cardapio</a></li>
+            <li><a href="contato.html">contato</a></li>
+            <li><a href="localizacao.html">localização</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Seja Bem Vindo a Nossa Cafeteria</h2>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde esse nesciunt corporis dolorem obcaecati quas voluptas fugit sunt, minus natus, reiciendis consequuntur maiores ullam quae voluptatem cumque dolor expedita.</span><span>Facilis rerum neque quasi veritatis corporis assumenda libero. Ipsum suscipit placeat, atque eligendi, quaerat a nisi eum enim accusamus repellendus, veniam saepe itaque sit quas vitae in quidem porro reiciendis.</span><span>In dicta perspiciatis, totam quas facere fugit eum nobis odit, tempora velit nemo aliquid quo ullam consectetur. Repellendus iste laudantium perferendis ipsum. Inventore placeat repellendus asperiores, odio porro laborum voluptates!</span></p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia molestias, suscipit nemo amet, temporibus quam maxime accusantium dolorum ipsam recusandae id fugiat tempore voluptatem dolorem neque voluptatum, obcaecati itaque?</span><span>Unde possimus iusto quod officiis ab voluptatibus, quisquam sequi, tenetur facere doloribus explicabo. Quas placeat repudiandae ratione hic est a, laboriosam quaerat. Facilis officia iure id saepe, aliquid tempore molestias.</span><span>Obcaecati perspiciatis rerum laudantium dolor? Animi veniam doloremque quibusdam, ratione consequatur, quis reiciendis modi, laborum nulla quod nobis facere ullam non! Pariatur harum excepturi dolorem recusandae perferendis aperiam illum. Dolores.</span></p>
+        
+        <div id="imghome">
+            <img src="img/tomarcafe2.jpg" alt="Tomando café">
+            <img src="img/tomarcafe3.jpg" alt="Cliente tomando café">
+        </div>
+
+    </main>
+    <footer>
+        <div id="endereco">
+            Rua Pedro Mariano Oliveira, 78 <br> 
+            São Paulo - SP - CEP: 03428-100 <br>
+            Telefone: 11 5682-4522
+        </div>
+
+        <div id="redes">
+            <ul>
+                <li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Acesse nosso facebook"></a></li>
+                <li><a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Acesse nosso instagram"></a></li>
+                <li><a href="http://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Acesso no canal no youtube"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function abrir(){
+            document.getElementsByTagName("nav")[0].style.left="0px";
+        }
+
+        function fechar(){
+            document.getElementsByTagName("nav")[0].style.left="-200px";
+        }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
